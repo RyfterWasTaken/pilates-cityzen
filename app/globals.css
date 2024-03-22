@@ -1,33 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face { font-family: josefin-sans; src: url("/public/assets/JosefinSans-Thin.ttf"); } 
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .default {
+    font-family: josefin-sans;
+    background-color: lightgreen;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgreen;
+    padding: 30px 50px;
   }
-}
+  .myfooter {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkgreen;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: darkgreen;
+    padding: 10px;
+  }
+  
+  
