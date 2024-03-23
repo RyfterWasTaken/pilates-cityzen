@@ -8,5 +8,5 @@ export async function middleware(req){
     "content": "logged entry"
   }
   await fetch(webhook,{body: JSON.stringify(body), headers:{"content-type":"application/json"}, method:"POST"})
-
+  return NextResponse;
 }
