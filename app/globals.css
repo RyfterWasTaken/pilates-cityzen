@@ -1,29 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face { font-family: josefin-sans; src: url("/public/assets/JosefinSans-Thin.ttf"); } 
 
-  .default {
-    font-family: josefin-sans;
-    background-color: lightgreen;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: darkgreen;
-    padding: 30px 50px;
-  }
-  .myfooter {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: darkgreen;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: darkgreen;
-    padding: 10px;
-  }
-  
-  
+@font-face {
+  font-family: josefin-sans;
+  src: url("/assets/JosefinSans-Light.ttf");
+}
+
+@font-face {
+  font-family: josefin-sans;
+  src: url("/assets/JosefinSans-Bold.ttf");
+  font-weight: bold;
+}
+
+.default {
+  font-family: josefin-sans;
+  background-color: lightgreen;
+}
+
+.font-josefin {
+  font-family: josefin-sans;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgreen;
+  padding: 0px 10px;
+}
+
+.navLink {
+  padding: 30px 15px;
+}
+
+.navLink:hover {
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(0, 50, 0);
+}
+
+.navLinkNoHov {
+  padding: 30px 15px;
+}
+
+.myfooter {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: darkgreen;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: darkgreen;
+  padding: 10px;
+}
+
+.navBarMenu {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.menuLink {
+  text-align: end;
+  padding: 20px 20px;
+}
+
+.menuLink:hover {
+  background-color: grey;
+}
+
+.menuFooter {  
+  background-color: darkgreen;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: darkgreen;
+  padding: 30px;
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+}
+
