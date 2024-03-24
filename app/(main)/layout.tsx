@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { NavBar, MyFooter } from "@/components/frame";
 import "../globals.css";
 
