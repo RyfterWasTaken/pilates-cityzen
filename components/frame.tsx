@@ -37,7 +37,7 @@ export function MyFooter() {
         Contact
       </div>
       <div>
-        Adress
+        Addresse
       </div>
     </div>
   )
